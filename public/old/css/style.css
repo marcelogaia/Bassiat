@@ -1,0 +1,488 @@
+/* CSS Document */
+
+.bg-contact {
+	background: url(../img/bg-contact.jpg) center 100px no-repeat;
+}
+
+h2, h3, h4 {
+	font-family: GothamLight-Regular, Arial, Helvetica, sans-serif !important;
+}
+.container {
+	width: 100%;
+	margin: auto;
+}
+
+.home {
+	height: 100%;
+	overflow: hidden;
+}
+
+.home .home-side {
+	width: 33%;
+	height: 100% !important;
+	position: absolute;
+	overflow: hidden;
+	left: 0;
+}
+
+.home h1.bassiat-logo {
+	display: block;
+	position: absolute;
+	bottom: 50px;
+	right: 0;
+	margin: 0 30px 0 0;
+}
+
+.home .menu {
+	display: block;
+	margin: 0 30px 0 0;
+}
+
+.home .menu li {
+	display: block;
+	margin: 10px 0;
+	font-size: 30px;
+	font-family: GothamLight-Regular, Arial, Helvetica, sans-serif;
+	text-align: right;
+}
+
+.home .menu li a {
+	display: block;
+	text-decoration: none;
+	color: #848484;
+}
+
+.home .menu li a:hover {
+	color: #000000;
+}
+
+.home .jobs {
+	width: 66%;
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.home .jobs ul {
+	display: block;
+	overflow: hidden;
+}
+
+.home .jobs ul li {
+	font-family: GothamLight-Regular, Arial, Helvetica, sans-serif;
+	color: #fff;
+	position: relative;
+}
+
+.home .jobs ul .featured {
+	display: block;
+	width: 100%;
+	float: left;
+}
+
+.home .jobs ul .featured img {
+	width: 100%;
+}
+
+.home .jobs ul .unfeatured {
+	display: block;
+	width: 50%;
+	float: left;
+}
+
+.home .jobs ul .unfeatured img {
+	width: 99%;
+}
+
+.home .jobs ul li h3 {
+	display: block;
+	position: absolute;
+	bottom: 40px;
+	left: 10px;
+	font-size: 20px;
+}
+
+.home .jobs ul li span {
+	display: block;
+	position: absolute;
+	bottom: 20px;
+	left: 10px;
+	font-size: 12px;
+}
+
+/* internal content */
+
+header {
+	width: 1000px;
+	margin: 0 auto !important;
+	overflow: hidden;
+	z-index: 10;
+	background: #ffffff;
+}
+
+header h1.internal-bassiat-logo {
+	margin: 40px 0;
+	float: left;
+}
+
+header nav {
+	display: block;
+	float: right;
+	font-family: 'GothamBook-Regular', Arial, Helvetica, sans-serif;
+	color: #848484;
+	font-size: 14px;
+	margin: 40px 0;
+}
+
+header nav li {
+	display: block;
+	float: left;
+}
+
+header nav li a {
+	display: block;
+	text-decoration: none;
+	color: #848484;
+	padding: 0 10px;
+}
+
+header nav li a:hover {
+	text-decoration: underline;
+}
+
+/* conteúdo interno */
+
+.internal-container {
+	width: 1000px;
+	margin: 0 auto 50px auto;
+	overflow: hidden;
+}
+
+/* projects */
+.internal-container .jobs {
+	display: block;
+	overflow: hidden;
+}
+
+.internal-container .jobs li {
+	width: 49%;
+	float: left;
+	font-family: GothamLight-Regular, Arial, Helvetica, sans-serif;
+	color: #fff;
+	position: relative;
+	margin: 0 0 7px 0;
+}
+
+.internal-container .jobs li.right-margin {margin: 0 18px 18px 0 !important;}
+
+.internal-container .jobs li img {
+	width: 100%;
+}
+
+.internal-container .jobs li h3 {
+	display: block;
+	position: absolute;
+	bottom: 40px;
+	left: 10px;
+	font-size: 40px;
+}
+
+.internal-container .jobs li h3 a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.internal-container .jobs li span {
+	display: block;
+	position: absolute;
+	bottom: 20px;
+	left: 10px;
+	font-size: 18px;
+}
+
+/* project page */
+.project {
+	overflow: hidden;
+}
+
+.project .feature {
+	overflow: hidden;
+}
+
+.project .feature img {
+	width: 100%;
+}
+
+.project .feature h2.project-title {
+	width: 1000px;
+	margin: 40px auto 10px auto;
+	font-size: 52px;
+	color: #3a3a3a;
+}
+
+.project .feature h2.project-title span.project-tags {
+	margin: 5px 0 0 0;
+	font-size: 14px;
+}
+
+
+
+.project .project-info {
+	width: 100%;
+}
+
+.project .project-info .left-info {
+	width: 33%;
+	float: left;
+	font-family: GothamLight-Regular, Arial, Helvetica, sans-serif;
+	text-align: right;
+}
+
+.project .project-info .left-info .first {
+	display: block;
+	float: right;
+	margin: 0 30px 510px 0;
+}
+
+.project .project-info .left-info .second {
+	display: block;
+	float: right;
+	margin: 0 30px 510px 0;
+}
+
+.project .project-info .left-info .third {
+	display: block;
+	float: right;
+	margin: 0 30px 0 0;
+}
+
+.project .project-info .right-info {
+	width: 67%;
+	float: left;
+}
+
+.project .project-info .right-info .img-first, .project .project-info .right-info .img-second, .project .project-info .right-info .img-third, .project .project-info .right-info .img-fourth, .project .project-info .right-info .img-fifth, .project .project-info .right-info .img-sixth, .project .project-info .right-info .img-seventh, .project .project-info .right-info .img-eighth, .project .project-info .right-info .img-nineth, .project .project-info .right-info .img-tenth, .project .project-info .right-info .last {
+	display: block;
+	float: left;
+	margin: 0 0 10px 0;
+}
+
+.project .project-info .right-info .img-first {width: 50%;}
+.project .project-info .right-info .img-second {width: 50%;}
+.project .project-info .right-info .img-third {width: 64%;}
+.project .project-info .right-info .img-fourth {width: 34%; background: #eaeaea; text-align: center; font-size: 20px; line-height: 30px; font-family: GothamLight-Regular, Arial, Helvetica, sans-serif; padding: 0 3px 10px 0;}
+.project .project-info .right-info .img-fifth {width: 98%; padding: 0 5px 0 0;}
+.project .project-info .right-info .img-sixth {width: 50%;}
+.project .project-info .right-info .img-seventh {width: 50%;}
+.project .project-info .right-info .img-eighth {width: 98%; padding: 0 5px 0 0;}
+.project .project-info .right-info .img-nineth {width: 50%;}
+.project .project-info .right-info .img-tenth {width: 50%;}
+.project .project-info .right-info .last {width: 100%;}
+
+
+.project .project-info .right-info .img-first img {width: 97%;}
+.project .project-info .right-info .img-second img {width: 97%;}
+.project .project-info .right-info .img-third img {width: 97%;}
+.project .project-info .right-info .img-fifth img {width: 100%;}
+.project .project-info .right-info .img-sixth img {width: 97%;}
+.project .project-info .right-info .img-seventh img {width: 97%;}
+.project .project-info .right-info .img-eighth img {width: 100%;}
+.project .project-info .right-info .img-nineth img {width: 97%;}
+.project .project-info .right-info .img-tenth img {width: 97%;}
+.project .project-info .right-info .last img {width: 31%;}
+
+/* quem somos */
+.quem h2 {
+	display: block;
+	font-size: 60px;
+	color: #f3716d;
+	margin: 60px 0 40px 0;
+}
+
+.quem p {
+	font-family: GothamLight-Regular, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.quem ul.women {
+	display: block;
+	width: 1000px;
+}
+
+.quem ul.women li {
+	display: block;
+	width: 50%;
+	float: left;
+}
+
+.quem ul.women li h3 {
+	display: block;
+	margin: 20px 0 10px 0;
+	font-size: 20px;
+	font-family: 'GothamBook-Regular', Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+
+.quem ul.women li a {
+	display: block;
+	width: 100px;
+	font-size: 10px;
+	font-family: 'GothamBook-Regular', Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #f3716d;
+	text-decoration: none;
+	margin: 0 0 10px;
+	background: url(../img/icons/mail-mini.png) center right no-repeat;
+}
+
+.quem ul.women li a:hover {
+	text-decoration: underline;
+}
+
+.quem ul.women li p {
+	display: block;
+	font-size: 12px;
+	padding: 0 40px 0 0;
+}
+
+/* media */
+.media h2 {
+	display: block;
+	font-size: 60px;
+	color: #f3716d;
+	margin: 60px 0 40px 0;	
+}
+
+.media ul {
+	display: block;
+	overflow: hidden;
+}
+
+.media ul li {
+	display: block;
+	margin: 0 20px 20px 0;
+	float: left;
+}
+
+/* contato */
+.contact {
+	width: 700px !important;
+}
+
+.contact h2 {
+	display: block;
+	font-size: 60px;
+	color: #f3716d;
+	margin: 60px 0 40px 0;	
+}
+
+.contact p {
+	font-family: GothamLight-Regular, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	margin: 0 0 40px 0;
+}
+
+.contact p span.red {
+	color: #f3716d;
+}
+
+.contact a {
+	display: block;
+	font-family: GothamLight-Regular, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #f3716d;
+	text-decoration: none;
+}
+
+.contact a:hover {
+	text-decoration: underline;
+}
+
+footer {
+	width: 100%;
+	height: 194px;
+	background: #000000;
+	bottom: 0;
+	overflow: hidden;
+}
+
+footer .footer-content {
+	width: 1000px;
+	margin: 60px auto;
+}
+
+footer .footer-content h2 {
+	display: block;
+	float: left;
+}
+
+footer .footer-content .social {
+	display: block;
+	overflow: hidden;
+	float: left;
+	margin: 50px 0 0 100px;
+	width: 600px;
+}
+
+footer .footer-content .social li {
+	display: block;
+	width: 16px;
+	height: 16px;
+	overflow: hidden;
+	float: left;
+	margin: 0 32px 0 0;
+	text-indent: -9999px;
+}
+
+footer .footer-content .social li a {
+	display: block;
+	width: 16px;
+	height: 16px;
+}
+
+footer .footer-content .social li#instagram {background: url(../img/icons/instagram.png) center top no-repeat;}
+footer .footer-content .social li#twitter {background: url(../img/icons/twitter.png) center top no-repeat;}
+footer .footer-content .social li#pinterest {background: url(../img/icons/pinterest.png) center top no-repeat;}
+footer .footer-content .social li#facebook {background: url(../img/icons/facebook.png) center top no-repeat;}
+footer .footer-content .social li#mail {background: url(../img/icons/mail.png) center top no-repeat;}
+
+footer .footer-content .bottom-access {
+	display: block;
+	overflow: hidden;
+	float: left;
+	margin: 8px 0 0 100px;
+	width: 600px;
+}
+
+footer .footer-content .bottom-access li {
+	display: block;
+	overflow: hidden;
+	float: left;
+	font-family: 'GothamBook-Regular', Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+
+footer .footer-content .bottom-access li a {
+	display: block;
+	padding: 0 21px 0 0;
+	text-decoration: none;
+	color: #848484;
+}
+
+footer .footer-content .bottom-access li a:hover {
+	text-decoration: underline;
+}
+
+footer .footer-content .mr {
+	display: block;
+	margin: -20px 0 0 0;
+	float: right;
+	background: url(../img/logo-mr.png) center top no-repeat;
+	text-indent: -9999px;
+	overflow: hidden;
+	width: 37px;
+	height: 37px;
+}

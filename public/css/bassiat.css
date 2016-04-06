@@ -1,0 +1,1200 @@
+/* CSS Document */
+
+body {
+	color: #504f4f;
+}
+
+.bg-contact {background: #f0f4fd url(../img/bg-contact.jpg) center -170px no-repeat;}
+
+.bg-mailing {background: url(../img/bg-modal.png) repeat; opacity: 1.0 !important;}
+
+h2, h3, h4 {
+	font-family: GothamHTF-XLight, Arial, Helvetica, sans-serif !important;
+}
+
+header {
+ max-width: 1152px !important;
+}
+
+.home-start {
+	position: fixed;
+	height: 100%;
+	width: 33%;
+}
+
+h1.bassiat-logo {
+	display: block;
+	width: 192px;
+	height: 101px;
+	position: absolute;
+	bottom: 70px;
+	right: 50px;
+	background: url(../img/bassiat-logo.png) center top no-repeat;
+	text-indent: -999px;
+}
+
+h1.bassiat-logo a {
+	display: block;
+	width: 192px;
+	height: 101px;
+	text-indent: -999px;
+}
+
+.menu {
+	display: block;
+	width: 100%;
+	position: absolute;
+	right: 50px;
+	top: 70px;
+}
+
+.menu li {
+	display: block;
+	margin: 0 0 25px;
+	text-align: right;
+}
+
+.menu li a {
+	display: block;
+	text-decoration: none;
+	color: #848484;
+	font-family:'GothamHTF-XLight', Arial, sans-serif;
+	font-size: 35px;
+	text-transform: uppercase;
+}
+
+.menu li a:hover {
+	color: #f3716d;
+}
+
+.jobs .featured {
+	position: relative;
+}
+
+.jobs .featured img {
+	width: 100%;
+}
+
+
+.jobs .featured h3 {
+	display: block;
+	font-family:'GothamHTF-XLight', Arial, sans-serif !important;
+	font-size: 28px;
+	color: #ffffff;
+	position: absolute;
+	bottom: 30px;
+	left: 18px;
+	z-index: 1;
+}
+
+.jobs .featured h3 a {
+	color: #ffffff;
+}
+
+.jobs .featured a.featured-link {
+	display: block;
+	opacity: 1;
+}
+
+.jobs .featured a.featured-link .overlay {
+    display: block;
+    opacity: 0;
+    background: rgba(0,0,0,.5);
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    position: absolute;
+    z-index: 0;
+}
+
+.jobs .featured a.featured-link .overlay-top {width: 100% ; height: 99.6%; top: 0; left: 0;}
+.jobs .featured a.featured-link .overlay-left {width: 97.8% ; height: 98.9%; top: 0; left: 0;}
+.jobs .featured a.featured-link .overlay-right {width: 98%; height: 99%; top: 0; left: 10px !important;}
+
+.jobs .featured a.featured-link:hover .overlay {
+    opacity: 0.7;
+}
+
+.jobs .featured h3 a:hover {
+	color: #ffffff;
+}
+
+.jobs .featured span {
+	display: block;
+	position: absolute;
+	font-family:'GothamHTF-XLight', Arial, sans-serif !important;
+	font-size: 12px;
+	color: #ffffff;
+	bottom: 20px;
+	left: 18px;
+	z-index: 1;
+}
+
+.jobs .about-bassiat {
+	background: #f3716d;
+	overflow: hidden;
+	/*height: 200px;*/
+}
+
+.jobs .about-bassiat h4.title-about {
+	display: block;
+	font-family:'GothamHTF-XLight', Arial, sans-serif !important;
+	color: #ffffff;
+	font-size: 28px;
+	font-size: 2em;
+	margin: 30px auto 0 !important;
+	text-align: center;
+}
+
+.jobs .about-bassiat p {
+	display: block;
+	font-family: 'GothamHTF-LightItalic', Arial, Helvetica, sans-serif !important;
+	font-size: 1em;
+	line-height: 1.5em;
+	margin: 15px auto;
+	max-width: 700px;
+	color: #ffffff;
+	text-align: center !important;
+}
+
+.jobs .about-bassiat a {
+	display: block;
+	color: #ffffff;
+	font-family:'GothamHTF-XLight', Arial, sans-serif !important;
+	font-size: 1.25em;
+	margin: 5px auto 25px auto;
+	text-align: center;
+}
+
+/* Content */
+.internal-content {
+	max-width: 1152px !important;
+	margin: 0 auto;
+}
+
+.internal-content-projects {
+	max-width: 1172px !important;
+	margin: 0 auto;
+}
+
+.internal-content h2 {
+	font-family:'GothamHTF-XLight', Arial, sans-serif !important;
+	font-size: 50px;
+	display: block;
+}
+
+.internal-content .tags {
+	font-family:'GothamHTF-XLight', Arial, sans-serif !important;
+	font-size: 16px;
+}
+
+
+/* Quem */
+.internal-content h2.title {
+	font-size: 5.35em;
+	line-height: 1.5em;
+	color: #f3716d;
+}
+
+.internal-content .intro {
+	font-family: 'GothamHTF-LightItalic', Arial, Helvetica, sans-serif !important;
+	font-size: 2em;
+	line-height: 2em;
+	color: 504f4f;
+	max-width: 550px;
+	margin: 100px auto 130px auto;
+	text-align: center;
+}
+
+.internal-content .intro .red {
+	color: #f3716d;
+}
+
+.internal-content .subtitle-who {
+	font-size: 30px;
+	font-family: 'GothamHTF-Book', Arial, Helvetica, sans-serif !important;
+	color: #5b5b5b;
+}
+
+.internal-content .subtitle-who .chapter {
+	color: #f3716d;
+	font-size: 3em;
+}
+
+.internal-content p.intro-quem {
+	font-family:'GothamHTF-XLight', Arial, sans-serif !important;
+	font-size: 1.5em;
+	line-height: 1.5em;
+	margin: 0 0 100px 0;
+}
+
+.partners {
+	max-width: 1152px !important;
+	margin-bottom: 150px;
+}
+
+.partners h3 {
+	display: block;
+	font-family: 'GothamHTF-Book', Arial, Helvetica, sans-serif !important;
+	font-size: 26px;
+	margin: 20px 0 10px 0;
+	font-weight: bold;
+}
+
+.partners .partner-mail {
+	display: block;
+	width: 150px;
+	font-size: 12px;
+	font-family: 'GothamHTF-Medium', Arial, Helvetica, sans-serif !important;
+	font-weight: bold;
+	color: #f3716d;
+	text-decoration: none;
+	margin: 0 0 10px;
+}
+
+.partners a:hover {
+	text-decoration: underline;
+}
+
+.partners p {
+	display: block;
+	font-size: 1em;
+	line-height: 1.4em;
+	padding: 0 20px 0 0;
+	font-family:'GothamHTF-XLight', Arial, sans-serif !important;
+}
+
+
+/* internal content */
+h1.internal-bassiat-logo {
+	display: block;
+	background: url(../img/internal-bassiat-logo.png) center top no-repeat;
+	margin: 35px 0 0 0;
+	float: left;
+	width: 122px;
+	height: 19px;
+}
+
+h1.internal-bassiat-logo a {
+	display: block;
+	width: 122px;
+	height: 19px;
+	text-indent: -999px;
+}
+
+nav {
+	display: block;
+	float: right;
+	font-family:'GothamHTF-Book', Arial, sans-serif;
+	color: #848484;
+	font-size: 14px;
+	margin: 42px 0 28px 0;
+}
+
+nav li {
+	display: block;
+	float: left;
+}
+
+nav li a {
+	display: block;
+	text-decoration: none;
+	color: #848484;
+	padding: 0 10px;
+}
+
+nav li a:hover {
+	color: #f3716d;
+}
+
+nav li a#contact {
+	padding: 0 0 0 10px !important;
+}
+
+/* Internal jobs */
+.inside-jobs {
+	margin: 0 0 20px 0;
+}
+.inside-jobs .featured {
+	position: relative;
+}
+
+.inside-jobs .featured img {
+	width: 100%;
+}
+
+
+.inside-jobs .featured a.job-link .overlay {
+    display: block;
+    opacity: 0;
+    background: rgba(0,0,0,.5);
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+		position: absolute;
+}
+
+.inside-jobs .featured a.job-link .overlay h3 {opacity: 0;}
+.inside-jobs .featured a.job-link .overlay span {opacity: 0;}
+
+.inside-jobs .featured a.job-link .overlay-left {width: 94.6%; height: 99.3%; top: 0; left: 0; margin: 0 10px;}
+.inside-jobs .featured a.job-link .overlay-right {width: 94.6%; height: 99.3%; top: 0; left: 10px !important;}
+
+.inside-jobs .featured a.job-link:hover .overlay {
+    opacity: 0.7;
+}
+
+
+.inside-jobs .featured a.job-link:hover .overlay h3 {
+	display: block;
+	font-family:'GothamHTF-XLight', Arial, sans-serif !important;
+	font-size: 2.25em;
+	color: #ffffff;
+	position: absolute;
+	bottom: 38px;
+	left: 25px;
+	opacity: 1.0;
+}
+
+.inside-jobs .featured a.job-link:hover .overlay span {
+	display: block;
+	position: absolute;
+	font-family:'GothamHTF-XLight', Arial, sans-serif !important;
+	font-size: 0.9em;
+	color: #ffffff;
+	bottom: 25px;
+	left: 25px;
+	opacity: 1.0;
+}
+
+.inside-jobs .featured a.job-link:hover .more-jobs-hover {
+	background: none !important;
+	opacity: 1.0 !important;
+
+}
+
+/* project page */
+
+.text-column p {
+	display: block;
+	font-family:'GothamHTF-XLight', Arial, sans-serif !important;
+	font-size: 16px !important;
+	line-height: 26px;
+}
+
+.text-column p.left-column-text {
+	max-width: 360px;
+	float: right;
+	margin: 30px 0 0 10px;
+}
+
+/*.text-column p.left-text {
+	margin-left: 90px;
+}*/
+
+.project-description {
+	display: block;
+	font-family:'GothamHTF-XLight', Arial, sans-serif !important;
+	color: #ffffff;
+}
+
+.project-description p {
+	font-size: 12px !important;
+	line-height: 18px;
+	background: #000000;
+	padding: 15px;
+}
+
+.share {
+	display: block;
+	overflow: hidden;
+	margin: 30px 0;
+}
+
+.share li {
+	display: block;
+	float: left;
+	margin: 0 10px 0 0;
+	text-indent: -9999px !important;
+	width: 26px;
+	height: 26px;
+}
+
+.share li a {
+	display: block;
+	width: 30px;
+	height: 26px;
+}
+
+.share li#compartilhe {width: 106px !important; height: 30px !important; background: url(../img/compartilhe.jpg) center top no-repeat}
+
+.share li a#insta-share {background: url(../img/instagram.png) 0 0 no-repeat}
+.share li a#insta-share:hover {background-position: 0 -26px;}
+
+.share li a#pinterest-share {background: url(../img/pinterest.png) 0 0 no-repeat}
+.share li a#pinterest-share:hover {background-position:0 -26px;}
+
+.share li a#twitter-share {background: url(../img/twitter.png) 0 0 no-repeat}
+.share li a#twitter-share:hover {background-position:0 -26px;}
+
+.share li a#fb-share {background: url(../img/facebook.png) 0 0 no-repeat}
+.share li a#fb-share:hover {background-position:0 -26px;}
+
+.share li a#mail-share {background: url(../img/mail.png) 0 0 no-repeat}
+.share li a#mail-share:hover {background-position:0 -26px;}
+
+.modern-traditional {
+	background: #eeeeee;
+	overflow: hidden;
+	padding: 45px 0;
+	margin: 0 !important;
+	text-indent: 0 !important;
+}
+
+.modern-traditional li {
+	display: block;
+ 	float: left;
+}
+
+.modern-traditional li#modern {
+	margin: 0 20px 0 0;
+	background: url(../img/moderno.jpg) center top no-repeat;
+	width: 283px;
+	height: 59px;
+}
+
+.modern-traditional li#modern:hover {
+	background-position: 0 -58px;
+}
+
+.modern-traditional li#modern a {
+	display: block;
+	width: 283px;
+	height: 59px;
+	text-indent: -999px;
+}
+
+.modern-traditional li#traditional {
+	margin: 0 30px 0 0;
+	background: url(../img/tradicional.jpg) 0 0 no-repeat;
+	width: 327px;
+	height: 59px;
+}
+
+.modern-traditional li#traditional:hover {
+	background-position: 0 -58px;
+}
+
+.modern-traditional li#traditional a {
+	display: block;
+	width: 327px;
+	height: 59px;
+	text-indent: -999px;
+}
+
+.modern-traditional li.more-jobs {
+	display: block;
+	height: 34px;
+	margin-top: 21px;
+	width: 34px;
+	background: url(../img/boxes.png) 0 0 no-repeat;
+}
+
+.modern-traditional li.more-jobs:hover {
+	background-position: 0 -34px;
+}
+
+.modern-traditional li.more-jobs a {
+	display: block;
+	width: 34px;
+	height: 34px;
+	text-indent: -9999px;
+	overflow: hidden;
+}
+
+
+/* media */
+.media h4 {
+		display: block;
+		font-size: 30px;
+		color: #acacac;
+		margin: 0 0 30px 0;
+}
+
+.media ul {
+	display: block;
+	overflow: hidden;
+	margin: 0 0 100px 0;
+}
+
+.media ul li {
+	display: block;
+	margin: 0 30px 20px 0;
+	float: left;
+	width: 200px;
+}
+
+.media ul li img {
+	float: left !important;
+	width: 100%;
+	margin: 0 0 10px 0;
+}
+
+.media ul li.last-media {
+	margin-right: 0 !important;
+}
+
+/* contato */
+
+.contact {
+	max-width: 748px !important;
+}
+
+.contact h2.contact-title {
+	display: block;
+	font-size: 3.7em;
+	line-height: 1.5em;
+	color: #f3716d;
+	margin: 30px 0 40px 7px;
+}
+
+.contact p {
+	font-family:'GothamHTF-XLight', Arial, sans-serif !important;
+	font-size: 16px;
+	line-height: 20px;
+	margin: 0 0 40px 0;
+}
+
+.contact p span {
+	color: #f3716d;
+	font-family:'GothamHTF-XLight', Arial, sans-serif !important;
+}
+
+.contact a {
+	display: block;
+	font-family:'GothamHTF-XLight', Arial, sans-serif !important;
+	font-size: 16px;
+	color: #f3716d;
+	text-decoration: none;
+}
+
+.contact a:hover {
+	text-decoration: underline;
+}
+
+/* mailing */
+.mailing {
+		height: 460px;
+}
+
+.mailing h3 {
+	color:#ffffff;
+	font-family:'GothamHTF-XLight', Arial, sans-serif !important;
+	font-size: 22px;
+	text-align: center;
+	margin-top: 150px;
+}
+
+.mailing input {
+	display: block;
+	margin: 0px auto 5px auto;
+	border: none;
+	padding: 10px;
+	border-radius: 3px;
+	background-color: #67b7d5;
+	color: #ffffff;
+	font-family:'GothamHTF-XLight', Arial, sans-serif !important;
+	width: 280px;
+}
+
+.mailing input.bt-aceitar {
+	display: block;
+	background: none;
+	cursor: pointer;
+	text-align: right;
+	font-size: 1.2em;
+	padding: 0;
+}
+
+.mailing input.bt-aceitar:hover {
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+footer {
+	background: #000000;
+	display: block;
+	margin: 0 !important;
+	padding: 50px 0;
+}
+
+.footer-content {
+	max-width: 1152px;
+	margin: 0px auto;
+	overflow: hidden;
+}
+
+.footer-content h2 {
+	display: block;
+	float: left;
+	margin: 20px 50px 20px 0;
+}
+
+.footer-content .footer-info {
+		width: 500px;
+		overflow: hidden;
+		float: left;
+}
+
+.footer-content .social {
+	display: block;
+	overflow: hidden;
+	margin: 69px 0 0 2px;
+	width: auto;
+}
+
+.footer-content .social li {
+	display: block;
+	width: 16px;
+	height: 16px;
+	overflow: hidden;
+	float: left;
+	margin: 0 32px 0 4px;
+	text-indent: -9999px;
+}
+
+.footer-content .social li a {
+	display: block;
+	width: 16px;
+	height: 16px;
+}
+
+.footer-content .social li#instagram {background: url(../img/icons/instagram.png) 0 0 no-repeat; margin: 0 32px 0 15px !important;}
+.footer-content .social li#instagram:hover {background-position: 0 -16px;}
+.footer-content .social li#twitter {background: url(../img/icons/twitter.png) 0 0 no-repeat;}
+.footer-content .social li#twitter:hover {background-position: 0 -16px;}
+.footer-content .social li#pinterest {background: url(../img/icons/pinterest.png) 0 0 no-repeat;}
+.footer-content .social li#pinterest:hover {background-position: 0 -16px;}
+.footer-content .social li#facebook {background: url(../img/icons/facebook.png) 0 0 no-repeat;}
+.footer-content .social li#facebook:hover {background-position: 0 -16px;}
+.footer-content .social li#mail {background: url(../img/icons/mail.png) 0 0 no-repeat;}
+.footer-content .social li#mail:hover {background-position: 0 -16px;}
+
+.footer-content .bottom-access {
+	display: block;
+	overflow: hidden;
+	width: auto;
+}
+
+.footer-content .bottom-access li {
+	display: block;
+	overflow: hidden;
+	font-size: 10px;
+	float: left;
+}
+
+.footer-content .bottom-access li a {
+	display: block;
+	padding: 0 12px;
+	text-decoration: none;
+	color: #848484;
+	font-family: 'GothamHTF-Book', Arial, Helvetica, sans-serif !important;
+}
+
+.footer-content .bottom-access li a:hover {
+	color: #ffffff;
+}
+
+.footer-content .mr {
+	display: block;
+	background: url(../img/logo-mr.png) center top no-repeat;
+	text-indent: -9999px;
+	overflow: hidden;
+	width: 37px;
+	height: 37px;
+	float: right;
+	margin-top: 64px;
+}
+
+.footer-content .mr:hover {
+	background-position: 0 -37px;
+}
+
+/* general classes */
+.active {
+	color: #f2706d;
+}
+
+.alg-right {
+	text-align: right;
+	margin: 0 0 500px 0 !important;
+}
+
+.alg-right a {
+		color: #8e8e8e;
+		font-family: GothamHTF-XLight, Arial, Helvetica, sans-serif !important;
+}
+
+.adjust-desktop-percent-one {width: 33% !important}
+.adjust-desktop-percent-two {width: 33.8% !important}
+
+ .img-partners {width: 100%; margin-bottom: 40px;}
+
+/* Queries CSS3 */
+@media screen and (max-device-width: 768px) and (orientation: portrait){
+
+				.bg-contact {background: #f0f4fd url(../img/bg-contact.jpg) center top no-repeat;}
+
+				.home-start {
+					width: 100%;
+					height: 100px;
+					position: relative;
+					overflow: hidden;
+				}
+
+				.home-start h1.bassiat-logo {
+						display: block;
+						margin: 20px 0 0 0;
+						width: 100%;
+						height: 38px;
+						background: url(../img/bassiat-home-logo.jpg) center top no-repeat;
+						text-indent: -999px;
+						position: absolute;
+						top: 0;
+						right: 0;
+
+				}
+
+				.home-start .menu {
+					display: block;
+					margin: 10px auto 0 auto;
+					width: 100%;
+					overflow: hidden;
+					position: absolute;
+					top: 68px;
+					right: 0;
+				}
+
+				.home-start .menu li {
+					display: block;
+					float: left;
+					font-size: 12px;
+					padding: 0 7px;
+					width: 25%;
+				}
+
+				.home-start .menu li a {
+					display: block;
+					font-size: 16px;
+					text-align: center;
+					text-transform: none;
+					color: #848484;
+					font-family:'GothamHTF-Book', Arial, sans-serif;
+				}
+
+				.home-start .menu li a#contact {
+					padding: 0 10px;
+				}
+
+				.jobs {
+					padding-left: 0 !important;
+					padding-right: 0 !important;
+				}
+
+				.jobs .featured {
+					padding-left: 0 !important;
+					padding-right: 0 !important;
+				}
+
+				.jobs .about-bassiat {height: 185px;}
+
+				/* header */
+				header {background: #f5f5f5; margin: 0 0 20px 0 !important;}
+
+				header h1.internal-bassiat-logo {
+						display: block;
+						background: url(../img/bassiat-mobile-logo.jpg) center top no-repeat;
+						width: 100%;
+						height: 38px;
+						margin: 30px auto 0 auto;
+				}
+
+				header h1.internal-bassiat-logo a {
+						display: block;
+						width: 74px;
+						height: 38px;
+						margin: 0 auto;
+				}
+
+				header nav {
+					width: 100%;
+					margin: 10px 0;
+				}
+
+				header nav li {
+					width: 25%;
+					text-align: center;
+				}
+
+				header nav li a {
+					font-size: 16px;
+				}
+
+				.alg-right {
+					text-align: left;
+					margin-bottom: 220px !important;
+				}
+
+				p.internal-text-column {
+					margin: 0 12px;
+				}
+				.text-column p.left-column-text {
+					display: block;
+					font-family:'GothamHTF-XLight', Arial, sans-serif !important;
+					font-size: 16px !important;
+					line-height: 26px;
+					float: right;
+					max-width: 768px !important;
+				}
+
+				.modern-traditional li#modern {
+					background: url(../img/moderno-mobile.jpg) center top no-repeat;
+					width: 100%;
+					height: 48px;
+					margin: 0 auto 20px auto;
+				}
+
+				.modern-traditional li#modern:hover {
+					background: url(../img/moderno-mobile.jpg) center top no-repeat;
+				}
+
+				.modern-traditional li#traditional {
+					background: url(../img/tradicional-mobile.jpg) center top no-repeat;
+					width: 100%;
+					height: 49px;
+					margin: 15px auto 40px;
+				}
+
+				.modern-traditional li#traditional:hover {
+					background: url(../img/tradicional-mobile.jpg) center top no-repeat;
+				}
+
+				.modern-traditional li.more-jobs {
+					background: url(../img/boxes.png) center top no-repeat;
+					width: 100%;
+					text-align: center;
+					margin: 20px auto;
+					bottom: 0;
+					left: 0;
+				}
+
+				.modern-traditional li.more-jobs:hover {
+						background: url(../img/boxes.png) center top no-repeat;
+				}
+
+				.modern-traditional li.more-jobs a {
+					width: 100%;
+				}
+
+				/* share */
+				.share {
+					display: block;
+					overflow: hidden;
+					margin: 30px auto 10px auto;
+					max-width: 300px;
+				}
+
+				.internal-content h2.title {
+					font-size: 5em;
+					line-height: 1.5em;
+					color: #f3716d;
+					text-align: left;
+				}
+
+
+				/* classes */
+					.mobile-margin {margin-bottom: 20px !important;}
+
+					.mobile-padding-none {
+						padding-left: 0 !important;
+						padding-right: 0 !important;
+					}
+
+					.mobile-appearance {display: none;}
+
+				.text-column p.left-text {margin-left: 0;}
+				.internal-content {margin: 20px auto 0 auto; padding: 0 20px;}
+
+				.contact h2.contact-title {
+					text-align: center;
+				}
+
+				.contact p {
+					text-align: center;
+				}
+				/* footer */
+				.footer-content h2 {
+					display: block;
+					width: 100%;
+					float: left;
+					text-align: center;
+				}
+
+				.footer-content .footer-info {
+					width: 100%;
+					float: left;
+					overflow: hidden;
+				}
+
+				.footer-info .social {width: 260px; margin: 0 auto 20px auto;}
+				.footer-info .social li {margin: 0 21px 0 16px;}
+				.footer-info .social li#instagram {margin: 0 16px !important}
+				.footer-info .social li.last {margin-left: 0;}
+				.footer-info .bottom-access {width: 260px; margin: 0 auto;}
+
+				.footer-content .mr {
+					display: block;
+					width: 100%;
+					text-align: center;
+					margin-top: 25px;
+				}
+
+				.adjust-desktop-percent-one {width: 33.3% !important}
+				.adjust-desktop-percent-two {width: 33.3% !important}
+}
+
+@media screen and (max-device-width: 468px) {
+
+	.bg-contact {background: #f0f4fd url(../img/bg-contact-mobile.jpg) center 200px no-repeat;}
+
+	.home-start {
+		width: 100%;
+		height: 100px;
+		position: relative;
+		overflow: hidden;
+	}
+
+	.home-start h1.bassiat-logo {
+			display: block;
+			margin: 20px 0 0 0;
+			width: 100%;
+			height: 38px;
+			background: url(../img/bassiat-home-logo.jpg) center top no-repeat;
+			text-indent: -999px;
+			position: absolute;
+			top: 0;
+			right: 0;
+
+	}
+
+	.home-start .menu {
+		display: block;
+		margin: 10px auto 0 auto;
+		width: 100%;
+		overflow: hidden;
+		position: absolute;
+		top: 68px;
+		right: 0;
+	}
+
+	.home-start .menu li {
+		display: block;
+		float: left;
+		font-size: 12px;
+		padding: 0 7px;
+		width: 25%;
+	}
+
+	.home-start .menu li a {
+		display: block;
+		font-size: 14px;
+		text-align: center;
+		text-transform: none;
+		color: #848484;
+		font-family:'GothamHTF-Book', Arial, sans-serif;
+	}
+
+	.home-start .menu li a#contact {
+		padding: 0 10px;
+	}
+
+	.jobs {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+
+	.jobs .featured {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+
+	.jobs .about-bassiat {height: 222px;}
+	.jobs .about-bassiat p {padding: 0 10px;}
+	.jobs .about-bassiat a {margin: 5px auto !important;}
+
+
+	/* header */
+	header {background: #f5f5f5;}
+
+	header h1.internal-bassiat-logo {
+			display: block;
+			background: url(../img/bassiat-mobile-logo.jpg) center top no-repeat;
+			width: 100%;
+			height: 38px;
+			margin: 30px auto 0 auto;
+	}
+
+	header h1.internal-bassiat-logo a {
+			display: block;
+			width: 74px;
+			height: 38px;
+			margin: 0 auto;
+	}
+
+	header nav {width: 100%; margin: 10px 0;}
+
+	header nav li {
+		width: 25%;
+		text-transform: none;
+		text-align: center;
+	}
+
+	header nav li a {
+		font-size: 14px;
+	}
+
+
+	.alg-right {
+		margin-bottom: 200px !important;
+	}
+
+	.modern-traditional li#modern {
+		background: url(../img/moderno-mobile.jpg) center top no-repeat;
+		width: 100%;
+		height: 48px;
+		margin: 0 auto 20px auto;
+	}
+
+	.modern-traditional li#modern:hover {
+		background: url(../img/moderno-mobile.jpg) center top no-repeat;
+	}
+
+	.modern-traditional li#traditional {
+		background: url(../img/tradicional-mobile.jpg) center top no-repeat;
+		width: 100%;
+		height: 49px;
+		margin: 15px auto 40px;
+	}
+
+	.modern-traditional li#traditional:hover {
+		background: url(../img/tradicional-mobile.jpg) center top no-repeat;
+	}
+
+	.modern-traditional li.more-jobs {
+		background: url(../img/boxes.png) center top no-repeat;
+		width: 100%;
+		text-align: center;
+		margin: 30px auto 20px auto;
+		bottom: 0;
+		left: 0;
+	}
+
+	.modern-traditional li.more-jobs:hover {
+			background: url(../img/boxes.png) center top no-repeat;
+	}
+
+	.modern-traditional li.more-jobs a {
+		width: 100%;
+	}
+
+	/* share */
+	.share {
+		display: block;
+		overflow: hidden;
+		margin: 30px 0 10px 0;
+	}
+
+	/* classes */
+		.mobile-margin {margin-bottom: 20px !important;}
+
+		.mobile-padding-none {
+			padding-left: 0 !important;
+			padding-right: 0 !important;
+		}
+
+		.mobile-appearance {display: none;}
+		.img-partners {width: 100%; margin-bottom: 0px !important;}
+
+	.text-column p.left-text {margin-left: 0;}
+
+	.internal-content {margin: 20px auto 0 auto; padding: 0 10px;}
+
+	.internal-content h2.title {
+		font-size: 2em;
+		line-height: 1.5em;
+		color: #f3716d;
+		text-align: left;
+	}
+
+	.internal-content .intro {
+		font-size: 1.25em;
+		margin: 90px auto;
+	}
+
+
+.internal-content .subtitle-who {font-size: 24px;}
+.internal-content .subtitle-who .chapter {font-size: 48px;}
+
+.media h4 {
+	font-size: 24px;
+}
+.media ul li {
+	display: block;
+	width: 260px !important;
+}
+
+
+	.mailing {height: 250px;}
+	.mailing h3 {margin-top: 100px; font-size: 20px;}
+
+	.contact h2.contact-title {
+		font-size: 20px;
+		text-align: center;
+		font-family: 'GothamHTF-Book', Arial, Helvetica, sans-serif !important;
+	}
+
+	.contact p {
+		text-align: center;
+		font-size: 13px;
+	}
+
+	/* footer */
+	.footer-content h2 {
+		display: block;
+		width: 100%;
+		float: left;
+		text-align: center;
+	}
+
+	.footer-content .footer-info {
+		width: 100%;
+		float: left;
+		overflow: hidden;
+	}
+
+	.footer-info .social {width: 260px; margin: 0 auto 20px auto;}
+	.footer-info .social li {margin: 0 21px 0 16px;}
+	.footer-info .social li#instagram {margin: 0 16px !important}
+	.footer-info .social li.last {margin-left: 0;}
+	.footer-info .bottom-access {width: 260px; margin: 0 auto;}
+
+	.footer-content .mr {
+		display: block;
+		width: 100%;
+		text-align: center;
+		margin-top: 25px;
+	}
+
+	.adjust-desktop-percent-one {width: 33.3% !important}
+	.adjust-desktop-percent-two {width: 33.3% !important}
+}
