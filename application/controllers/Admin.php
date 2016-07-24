@@ -3,29 +3,39 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Admin extends CI_Controller {
 
-	public function __construct()
-	{
+	/**
+	 * Constructor method. Call the parent constructor and loads and models used
+	 * in the class.
+	 */
+	public function __construct(){
 		parent::__construct();
         $this->load->model('Media_model');
         $this->load->model('Project_model');
 	}
 
-	public function index()
-	{
+	/**
+	 * The main index page. Simple loads the view if the user is logged in.
+	 */
+	public function index(){
         if(!$this->logged_in()) redirect("painel/login");
 		$this->load->view('admin/general-admin');
 	}
 
-	public function medias()
-	{
+	/**
+	 * Loads all medias and send it to the view.
+	 */
+	public function medias(){
         if(!$this->logged_in()) redirect("painel/login");
         $data['medias'] = $this->Media_model->get_medias(0);
 
         $this->load->view('admin/edit-media', $data);
 	}
 
-    public function projects($error = false)
-    {
+	/**
+	 * Loads all projects and the number of them which are featured and send it 
+	 * to the view.
+	 */
+    public function projects(){
         if(!$this->logged_in()) redirect("painel/login");
         $data['projects'] = $this->Project_model->get_projects(0);
         $data['numfeatured'] = $this->Project_model->get_num_featured();
@@ -33,8 +43,13 @@ class Admin extends CI_Controller {
         $this->load->view('admin/edit-projects', $data);
     }
 
-	public function add_media($id = 0)
-	{
+	/**
+	 * Creates a new media if $id > 0 with the post information, it gets 
+	 * updates the registry otherwise.
+	 * 
+	 * @param int $id 		The id number of the media
+	 */
+	public function add_media($id = 0){
         if(!$this->logged_in()) redirect("painel/login");
 
         $this->load->helper('form');
@@ -72,8 +87,13 @@ class Admin extends CI_Controller {
 		$this->load->view('admin/add-media', $data);
 	}
 
-	public function add_project($id = 0)
-	{
+	/**
+	 * Creates a new project if $id > 0 with the post information, it gets 
+	 * updates the registry otherwise.
+	 * 
+	 * @param int $id 		The id number of the project
+	 */
+	public function add_project($id = 0){
         if(!$this->logged_in()) redirect("painel/login");
 
         $this->load->helper('form');
@@ -125,12 +145,18 @@ class Admin extends CI_Controller {
 		$this->load->view('admin/add-project', $data);
 	}
 
+	/**
+	 * Sends a command to the model Project_model so it removes the registry from 
+	 * the database and redirects to the projects page.
+	 * 
+	 * @param $id 		ID of the project being removed
+	 */
     public function remove_project($id = 0){
         if($id > 0) $this->Project_model->remove($id);
         redirect("painel/projetos");
     }
 
-    /***
+    /**
      * Move the featured projects up and down or remove them based on the direction
      * passed. If $direction = 1, moves it up, -1 moves it down and false remove from
      * the features or sub-features.
@@ -223,13 +249,23 @@ class Admin extends CI_Controller {
         redirect("painel/projetos");
     }
 
+
+	/**
+	 * Sends a command to the model Media_model so it removes the registry from 
+	 * the database and redirects to the media page.
+	 * 
+	 * @param $id 		ID of the media being removed
+	 */
     public function remove_media($id = 0){
         if($id > 0) $this->Media_model->remove($id);
         redirect("painel/midias");
     }
 
-	public function login()
-	{
+    /**
+     * Login and creates a CodeIgniter session with the information passed. If the information
+     * doesn't match, shows a error message. If no information is passed, shows the login page.
+     */
+	public function login(){
         $this->load->model('User_model');
         $data['login'] = "";
         if($this->input->post('user')){
@@ -251,30 +287,46 @@ class Admin extends CI_Controller {
         }
 
         if($this->logged_in()) redirect("painel/");
+
 		$this->load->view('admin/login',$data);
 	}
 
-    public function logout()
-    {
+	/**
+	 * Logout any users connected and redirects to the login area.
+	 */
+    public function logout(){
         $this->session->sess_destroy();
         redirect("painel/");
     }
 
+    /**
+     * Simple checks if there's any user logged in.
+     */
     public function logged_in(){
         return isset($this->session->userdata['logged_in']);
     }
 
+    /**
+     * Uploads the file passed on the <input type="file" name="$fieldname"> to the 
+     * directory $directory and rename it to $filename.
+     * 
+     * @param $fieldname 	The name of the input of type file
+     * @param $directory 	The directory in which the files will be stored
+     * @param $filename 	The new name of the file after uploaded
+     * 
+     * @return string 		The file name if successful, blank if not.
+     */
     private function upload($fieldname, $directory, $filename){
-        //Configure
-        //set the path where the files uploaded will be copied. NOTE if using linux, set the folder to permission 777
+        /* Set the path where the files uploaded will be copied. 
+        NOTE: if using linux, set the folder to permission 777 */
         $config['upload_path'] = 'public/' . $directory;
         $config['overwrite'] = true;
 
         $config['file_name'] = $filename;
-        // set the filter image types
+        // Set the filter image types
         $config['allowed_types'] = 'gif|jpg|png';
 
-        //load the upload library
+        // Load the upload library
         $this->load->library('upload', $config);
 
         $this->upload->initialize($config);
@@ -283,11 +335,11 @@ class Admin extends CI_Controller {
 
         $data['upload_data'] = '';
 
-        //if not successful, set the error message
+        // If not successful, set the error message
         if (!$this->upload->do_upload($fieldname)) {
             $data = array('msg' => $this->upload->display_errors());
             return "";
-        } else { //else, set the success message
+        } else { // Else, set the success message
             $data = array('msg' => "Upload success!");
 
             $data['upload_data'] = $this->upload->data();
@@ -295,6 +347,18 @@ class Admin extends CI_Controller {
         }
     }
 
+    /**
+     * Creates a friendly for the object path based on the $url passed and the kind of 
+     * object it is. Increment the name of the directory / url if the url passed already 
+     * exists in the database or if there's already a directory with that name.
+     * 
+     * @param string $url 		The path being checked / created
+     * @param string $table 	Name of the table of which the object belongs
+     * 
+     * @return string 			The final name of the directory created
+     * 
+     * @see check_path
+     */
     public function url_path_builder($url,$table){
         switch ($table){
             case 'media':
@@ -320,7 +384,7 @@ class Admin extends CI_Controller {
         } else{ // If not, create it.
             $newurl = explode("-",$url);
 
-            // If the url has less than 2 (name-1) names or the last one is not a number (name-project-1)
+            // If the url has less than 2 segments (name-1) names or the last one is not a number (name-project-1)
             if(count($newurl) < 2 OR !is_numeric($newurl[count($newurl)-1])){
                 return $this->url_path_builder($url . "-1",$table);
             } else {
@@ -329,6 +393,12 @@ class Admin extends CI_Controller {
         }
     }
 
+    /**
+     * Checks if the directory already exists, if it doesn't, creates it.
+     * 
+     * @return string 		The name of the folder being checked / created
+     * @see url_path_builder
+	*/
     private function check_path($url, $table){
         $path = 'public/uploads/' . $table . "/" . $url;
 
@@ -339,8 +409,17 @@ class Admin extends CI_Controller {
         return $url;
     }
 
-    private function str_lreplace($search, $replace, $subject)
-    {
+    /**
+     * Replaces the last occurence of a string ($search) with a second string ($replace) 
+     * in the bigger string ($subject)
+     * 
+     * @param $search 		The string which will be replaced
+     * @param $replace 		The string that will replace the first one
+     * @param $subject 		The context where the replacement will happen
+     * 
+     * @return string 		The new context with the replaced string
+     */
+    private function str_lreplace($search, $replace, $subject){
         $pos = strrpos($subject, $search);
 
         if($pos !== false)

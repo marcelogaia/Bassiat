@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -8,10 +6,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<base href="/site2/">
-
-	<!-- javascript -->
-	<script src="js/jquery-1.4.3.min.js" type="text/javascript"></script>
+	<base href="<?php echo base_url(); ?>">
 
 	<!-- css -->
 	<link rel="icon" href="favicon.ico" type="image/x-icon" />
@@ -25,17 +20,17 @@
 
 	<style>
 		.content{width: 100%; height: auto;}
-	.note {
-		background-color: #ffffff;
-		padding: 10px 0;
-		color: #333333;
-				border-radius:5px;
-		   -moz-border-radius:5px;
-		-webkit-border-radius:5px;
-				box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
-	       -moz-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
-		-webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
-	}
+		.note {
+			background-color: #ffffff;
+			padding: 10px 0;
+			color: #333333;
+					border-radius:5px;
+			   -moz-border-radius:5px;
+			-webkit-border-radius:5px;
+					box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+		       -moz-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+			-webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+		}
 	</style>
 
 </head>
@@ -88,5 +83,8 @@ if($count == 5 && $showmore) { ?>
 	<footer class="row space-bot">
 		<?php echo $footer ?>
 	</footer>
+
+	<!-- javascript -->
+	<script src="js/jquery-1.4.3.min.js" type="text/javascript"></script>
 </body>
 </html>

@@ -9,7 +9,7 @@
 ?>
 <div class="c12 first">
     <div class="footer-content">
-        <h2><a href="index.html"><img src="img/footer-bassiat-logo.png" alt="Bassiat - 2015" border="0" /></a></h2>
+        <h2><a href="<?php echo base_url(); ?>"><img src="img/footer-bassiat-logo.png" alt="Bassiat - 2015" border="0" /></a></h2>
         <div class="footer-info">
             <ul class="social">
                 <li id="instagram"><a href="" target="_blank">Instagram</a></li>

@@ -22,12 +22,12 @@ foreach($twitterarr as $key=>$value){
     <meta property="og:title"         content="Bassiat :: 2015 - <?= $project->name ?>" />
     <meta property="og:description"   content="<?= $project->text_1 ?>" />
     <meta property="og:image"         content="<?php
-        echo "http://$_SERVER[HTTP_HOST]/site2";
+        echo "http://$_SERVER[HTTP_HOST]/Bassiat";
         echo "/public/uploads/projects/" . $project->url_path . "/" . $project->featured_img
         ;
     ?>" />
 
-	<base href="/site2/">
+	<base href="<?php echo base_url(); ?>">
 
 	<link rel="icon" href="favicon.ico" type="image/x-icon" />
 	<link rel="stylesheet" type="text/css" href="css/ivory.css" media="all">

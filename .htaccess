@@ -1,0 +1,9 @@
+RewriteEngine On
+
+RewriteBase /
+
+RewriteCond $1 !^(index\.php|robots\.txt|docs|system|img|js|fonts|css|uploads|public)
+RewriteRule ^(.*)$ index.php?/$1 [L]
+
+RewriteCond $1 ^(img|js|fonts|css|uploads)
+RewriteRule ^(.*)$ public/$1 [L]

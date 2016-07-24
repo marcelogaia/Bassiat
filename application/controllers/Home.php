@@ -14,4 +14,9 @@ class Home extends CI_Controller {
         $data['featured'] = $this->Project_model->get_featured();
 		$this->load->view('home',$data);
 	}
+
+	public function debug()
+	{
+		echo $this->router->class . " - " . $this->router->method;
+	}
 }
